@@ -11,13 +11,6 @@ import {
     Keyboard,
 } from 'react-native';
 
-// PR: https://github.com/hossein-zare/react-native-dropdown-picker/pull/132
-// import {TouchableOpacity, ScrollView} from 'react-native-gesture-handler';
-
-// Icon
-import Feather from 'react-native-vector-icons/Feather';
-Feather.loadFont();
-
 class DropDownPicker extends React.Component {
     constructor(props) {
         super(props);
@@ -689,9 +682,9 @@ DropDownPicker.defaultProps = {
     arrowColor: '#000',
     showArrow: true,
     arrowSize: 15,
-    customArrowUp: (size, color) => <Feather name="chevron-up" size={size} color={color} />,
-    customArrowDown: (size, color) => <Feather name="chevron-down" size={size} color={color} />,
-    customTickIcon: () => <Feather name="check" size={15} />,
+    customArrowUp: (size, color) => null,
+    customArrowDown: (size, color) => null,
+    customTickIcon: () => null,
     zIndex: 5000,
     zIndexInverse: 6000,
     disabled: false,
